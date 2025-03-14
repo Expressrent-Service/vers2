@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CVT Automotive - din pasiune pentru mașini</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background: url('images/fon1.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header și titlu */
+        .header {
+            text-align: center;
+            padding: 50px 0;
+            color: #ffffff;
+        }
+
+        .header h1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: #ffffff;
+            text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .contact {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #0000ff;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        .icons i {
+            font-size: 30px;
+            margin: 0 10px;
+            color: #0af;
+            transition: color 0.3s;
+        }
+
+        .icons i:hover {
+            color: #ff6347;
+        }
+
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .service {
+            background: #b0e0e6;
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            width: 300px;
+        }
+
+        .service img {
+            width: 80%;
+            border-radius: 5px;
+        }
+
+        /* Galerie cu imagini plasate câte 3 în rând */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .gallery img {
+            width: 80%; /* Imagini mai mici */
+            height: auto;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.1);
+        }
+
+        .gallery img:active {
+            transform: scale(1.2);
+        }
+
+        /* Modificări pentru titlul site-ului */
+        .header h1 {
+            font-size: 60px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        /* Titlul "Serviciile noastre" */
+        .services-title {
+            font-size: 36px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        /* Autoritatea Națională pentru Protecția Consumatorilor */
+        .anpc {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            background: #ffffff;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+            z-index: 10;
+            font-size: 16px;
+            display: flex;
+            align-items: center; /* Aliniază textul și imaginea pe orizontală */
+            gap: 10px; /* Spațiu între text și imagine */
+        }
+
+        .anpc a {
+            color: #000;
+            text-decoration: none;
+            display: block;
+        }
+
+        .anpc img {
+            width: 30px; /* Dimensiune mai mică pentru imaginea anpc1 */
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Imaginea im1 sub casete */
+        .im1-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .im1-container img {
+            width: 40%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        /* Butonul de limbă în dreapta sus */
+        .language-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background-color: #0000ff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            z-index: 100;
+        }
+    </style>
+</head>
+<body>
+    <button class="language-button" onclick="toggleLanguage()">Română / English</button>
+
+    <div class="header">
+        <h1>CVT Automotive - din pasiune pentru mașini</h1>
+    </div>
+
+    <div class="container">
+        <div class="contact">
+            <p>Telefon: <a href="tel:+40743675789">+40 743 675 789</a></p>
+            <p class="icons">
+                <a href="tel:+40743675789"><i class="fas fa-phone-alt"></i></a>
+                <a href="https://wa.me/40743675789"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://t.me/40743675789"><i class="fab fa-telegram"></i></a>
+            </p>
+            <p>Email: <a href="mailto:expressrent.srl@gmail.com">expressrent.srl@gmail.com</a></p>
+            <p>Adresă: București, sectorul 1, Bulevardul General Gheorghe Magheru, nr.31, etaj 5, biroul 2</p>
+        </div>
+
+        <!-- Titlu "Serviciile noastre" -->
+        <h2 class="services-title">Serviciile noastre</h2>
+
+        <!-- Casetele de servicii -->
+        <div class="services">
+            <div class="service">
+                <h2>Închirieri auto</h2>
+                <p>Închirieri auto în București Non-Stop 24/7 și Aeroport Otopeni. Cele mai mici prețuri pentru clasa econom și confort!</p>
+                <p>Livrarea și returnarea autoturismelor Non Stop la orice oră la orice loc solicitat!</p>
+                <p>Disponibilitatea și rezervarea autoturismelor se comunică și efectuează telefonic sau pe WhatsApp. Trimit imediat poze cu mașinile disponibile.</p>
+                <p>Prețurile încep de la 10 euro / zi (TVA inclus), în funcție de marca și modelul de mașină închiriată!</p>
+            </div>
+            <div class="service">
+                <h2>Tractări auto & asistență rutieră</h2>
+                <p>Tractari și transport pe platforma auto Bucuresti si Ilfov Non Stop. Intervenție rapidă!</p>
+                <p>Preț mic - orice direcție. Disponibil Non Stop - la orice oră pe orice anotimp!</p>
+                <p>Orice formă de achitare: transfer, cash, card. (factură și bon fiscal cu TVA cu decontare la asigurare).</p>
+            </div>
+            <div class="service">
+                <h2>Transport auto pe platformă din UE</h2>
+                <p>Servicii rapide și sigure de transport auto pe platformă din toată Europa.</p>
+            </div>
+            <div class="service">
+                <h2>Înmatriculări auto & acte auto & asigurări</h2>
+                <p>Ajutăm cu înmatriculări auto, documente și asigurări auto.</p>
+            </div>
+            <div class="service">
+                <h2>Manager transport marfă & persoane și Consilier siguranță</h2>
+                <p>Servicii profesionale de consultanță în transport de marfă și persoane.</p>
+            </div>
+            <div class="service">
+                <h2>Înființări firme și sedii sociale</h2>
+                <p>Oferim suport complet pentru înființarea firmelor și obținerea sediilor sociale.</p>
+            </div>
+        </div>
+
+        <!-- Imaginea im1 sub casete, la mijloc -->
+        <div class="im1-container">
+            <img src="images/Im1.jpg" alt="Închirieri auto 1">
+        </div>
+
+        <!-- Galerie cu imagini -->
+        <div class="gallery">
+            <img src="images/im2.jpg" alt="Închirieri auto 2">
+            <img src="images/im3.jpg" alt="Închirieri auto 3">
+            <img src="images/im4.jpg" alt="Închirieri auto 4">
+            <img src="images/img1.jpg" alt="Tractări auto 1">
+            <img src="images/img2.jpg" alt="Tractări auto 2">
+            <img src="images/img3.jpg" alt="Tractări auto 3">
+            <img src="images/img4.jpg" alt="Tractări auto 4">
+            <img src="images/serv1.jpg" alt="Transport auto 1">
+            <img src="images/serv2.jpg" alt="Transport auto 2">
+        </div>
+    </div>
+
+    <!-- Autoritatea Națională pentru Protecția Consumatorilor -->
+    <div class="anpc">
+        <a href="https://anpc.ro/">AUTORITATEA NAȚIONALĂ<br> PENTRU PROTECȚIA CONSUMATORILOR</a>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            var lang = document.documentElement.lang;
+            if (lang === 'ro') {
+                document.documentElement.lang = 'en';
+                changeContentToEnglish();
+            } else {
+                document.documentElement.lang = 'ro';
+                changeContentToRomanian();
+            }
+        }
+
+        function changeContentToEnglish() {
+            document.querySelector('.header h1').innerText = 'CVT Automotive - Passion for Cars';
+            document.querySelector('.services-title').innerText = 'Our Services';
+            // Other text translations go here...
+        }
+
+        function changeContentToRomanian() {
+            document.querySelector('.header h1').innerText = 'CVT Automotive - din pasiune pentru mașini';
+            document.querySelector('.services-title').innerText = 'Serviciile noastre';
+            // Other text translations go here...
+        }
+    </script>
+</body>
+</html>
